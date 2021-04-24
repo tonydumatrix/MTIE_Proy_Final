@@ -101,8 +101,8 @@ services:
         #- discovery.seed_hosts=elasticsearch
         #- cluster.initial_master_nodes=elasticsearch
         #- cluster.name=sdes-bi-cluster
-      - bootstrap.memory_lock=true
-      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+        #- bootstrap.memory_lock=true
+        #- "ES_JAVA_OPTS=-Xms512m -Xmx512m"
     ulimits:
       memlock:
         soft: -1
